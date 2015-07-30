@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Weather Scrapper</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./css/mainSheet.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h1>Weather Scraper</h1>
+                    <p>Please enter the city you want to get the information 
+                    from down below in the text box, the result will come out 
+                    as soon as you click search</p>
+                    <form id="weatherPanel">
+                        <div class="form-group">
+                            <input id="searchBox" class="form-control" type="text" name="cityInput" placeholder="Please enter your city here" />
+                        </div>
+                        <input id="weatherSearchSubmit" class="btn btn-success btn-lg" type="submit" name="citySubmit" value="Search" />
+                    </form>
+                    <p id="emptyMessage" class="alert alert-danger">Please enter city first!</p>
+                    <p id="weatherReport" class="alert alert-success"></p>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="./javascript/WindowControl.js"></script>
+</body>
+</html>
